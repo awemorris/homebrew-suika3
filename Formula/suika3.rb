@@ -9,7 +9,7 @@ class Suika3 < Formula
 
   depends_on "libpng"
   depends_on "jpeg-turbo"
-  depends_on "libwebp"
+  depends_on "webp"
   depends_on "libogg"
   depends_on "libvorbis"
   depends_on "brotli"
