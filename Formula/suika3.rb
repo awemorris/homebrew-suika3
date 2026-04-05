@@ -16,7 +16,7 @@ class Suika3 < Formula
   depends_on "freetype"
   
   def install
-    system "cmake", "--preset", "macos-cli", *std_cmake_args
+    system "cmake", "--preset", "macos-cli", "-DSUIKA_ENABLE_DIST=ON", *std_cmake_args
     system "cmake", "--build", "--preset", "macos-cli"
 
     bin.install "build-macos-cli/suika3"
