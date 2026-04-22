@@ -16,13 +16,25 @@ class Suika3 < Formula
   depends_on "freetype"
   
   def install
-    system "cmake", "--preset", "macos-cli", "-DSUIKA_ENABLE_DIST=ON", *std_cmake_args
-    system "cmake", "--build", "--preset", "macos-cli"
+    system "cmake",
+           ".",
+           "-DCMAKE_BUILD_TYPE=Release",
+           "-DCMAKE_OSX_DEPLOYMENT_TARGET=10.11",
+           "-DSUIKA_TARGET_MACOS_CLI=ON",
+           "-DSUIKA_ENABLE_INSTALL=ON",
+           "-DSUIKA_ENABLE_JIT=ON",
+           "-DSUIKA_ENABLE_I18N=ON",
+           "-DSUIKA_ENABLE_PACK=ON",
+           "-DSUIKA_ENABLE_BYTECOMP=ON",
+           "-DSUIKA_ENABLE_AOTCOMP=ON"
+           "-DSUIKA_ENABLE_DIST=ON",
+           *std_cmake_args
+    system "cmake", "--build", "."
 
-    bin.install "build-macos-cli/suika3"
-    bin.install "build-macos-cli/suika3-pack"
-    bin.install "build-macos-cli/suika3-aotc"
-    bin.install "build-macos-cli/suika3-bcc"
+    bin.install "suika3"
+    bin.install "suika3-pack"
+    bin.install "suika3-aotc"
+    bin.install "suika3-bcc"
 
     man1.install "resources/manpage/suika3.1"
     man1.install "resources/manpage/suika3-pack.1"
