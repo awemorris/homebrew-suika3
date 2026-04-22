@@ -1,8 +1,8 @@
 class Suika3 < Formula
   desc "2D Game and Visual Novel Engine"
   homepage "https://github.com/awemorris/suika3"
-  url "https://github.com/awemorris/suika3/archive/refs/tags/26.04.7.zip"
-  sha256 "b7b4122def982e0db1d096ad024ddb1472b691884b839f1aa25fb01bc1022e3a"
+  url "https://github.com/awemorris/suika3/archive/refs/tags/26.04.11.zip"
+  sha256 "340a15deca3a78259b96c3d4bf227057caee12c2a8fcaae4e90aacc5cd7da0bd"
   license "Zlib"
 
   depends_on "cmake" => :build
