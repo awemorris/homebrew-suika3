@@ -3,8 +3,8 @@ require 'rbconfig'
 class Suika3 < Formula
   desc "2D Game and Visual Novel Engine"
   homepage "https://github.com/awemorris/suika3"
-  url "https://github.com/awemorris/suika3/archive/refs/tags/CI-20260422-0721-cb72b9d.zip"
-  sha256 "3f142e5347f43236578d1a90bf90105c5151f1c1d335a3e5af5a7e26987fd3ea"
+  url "https://github.com/awemorris/suika3/archive/refs/tags/26.04.14.zip"
+  sha256 "dd00b71a429efc49d7e4bcb09dcd94785a70de36d3c2f95d2caff03cb8f16211"
   license "Zlib"
 
   depends_on "cmake" => :build
