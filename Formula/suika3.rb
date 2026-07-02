@@ -3,7 +3,7 @@ require 'rbconfig'
 class Suika3 < Formula
   desc "2D Game and Visual Novel Engine"
   homepage "https://github.com/awemorris/suika3"
-  url "https://github.com/awemorris/suika3/archive/refs/tags/26.07.03.zip"
+  url "https://github.com/awemorris/suika3/archive/refs/tags/26.07.3.zip"
   sha256 "b8f6df5aed3596d15627264ebb2162c0bb837aa0"
   license "Zlib"
 
