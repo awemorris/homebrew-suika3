@@ -5,8 +5,8 @@ class Suika3 < Formula
   homepage "https://github.com/awemorris/suika3"
 
   url "https://github.com/awemorris/suika3.git",
-      revision: "2e512a1e7b8c609a51527a7f95a161933650ef58"
-  version "26.07.3"
+      revision: "543b416e48c2a548a4348523980a8a70eeed3d1b"
+  version "26.07.4"
 
   license "Zlib"
 
